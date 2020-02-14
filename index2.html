@@ -1,0 +1,187 @@
+<html>
+<head>
+<style>
+body{
+background:url(OIPHPHR419E.jpg);
+background-size:cover;
+}
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 50%;
+ margin-left:400px;
+  margin-top:200px;
+  color:black;
+}
+
+TD, th {
+  border: 1px solid BLACK;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color:#b2dffb;
+  
+}
+tr:nth-child(odd) {
+  background-color: #f6c3e5;  
+}
+
+#txt{
+width:50px;
+}
+.button{
+background-color:green;
+color:black;
+width:120px;
+height:40px;
+ border-radius:100px;
+ margin-right:20px;
+ position:absolute;
+ top:450px;
+ bottom:200px;
+ left:500px;
+ font-size:20px;"
+ }
+ .button1:hover{
+ background:black;
+ color:red;
+ }
+ 
+ .img{
+ position:absolute;
+top:10;
+left:500px;
+border-radius:10%;
+height:165px;
+width:450px;
+ background:url(thNLCUDJPG.jpg);
+ }
+ .img1{
+ position:absolute;
+bottom:50;
+left:500px;
+border-radius:10%;
+height:165px;
+width:250px;
+ background:url(OIPSA0883T8.jpg);
+ }
+  
+
+</style>
+<body>
+
+<table >
+<div class="img"></div>
+
+<Tr>
+<TH> MENU</TH>
+<th> PRICE</th>
+<TH> QUANTITY</TH>
+</TR>
+<tr>
+
+
+<TD><SELECT>
+<OPTION id="quantity" value="opt1">DISHS</OPTION>
+<OPTGROUP label= "NON-VEG">
+<OPTION value="opt2">BIRYANI</OPTION>
+<OPTION value="opt3">CHICKEN-KORMA </OPTION>
+<OPTION value="opt4">CHIKEN-BUTTER-MASALA</OPTION>
+<OPTION value="opt5">CHICKEN-AFGANI</OPTION>
+</OPTGROUP>
+<OPTGROUP label= "VEGETARIAN">
+<OPTION value="opt2">VEG-THALI/OPTION>
+<OPTION value="opt3">MALAYI KHOFTA</OPTION>
+<OPTION value="opt4">MIX VEG</OPTION>
+<OPTION value="opt5">THODRI ROTI</OPTION></SELECT>
+</OPTGROUP>
+</TD></SELECT>
+<td>150</td>
+
+<td><input type="text" id="txt1"></input></td>
+
+</tr>
+<tr>
+
+<TD><SELECT>
+<OPTION id="COCKTAIL" value="opt1">COCKTAIL</option>
+<optgroup label="COCKTAIL">
+<option value="opt2">MONJITOES</OPTION>
+<option value="opt3">COLD-COFFES</OPTION>
+<option value="opt4">OREO SHAKE</OPTION>
+<option value="opt5">MIX FRUIT SHAKE</OPTION>
+</optgroup>
+<td>200</td>
+
+<td><input type="text" id="txt2"></input></td>
+
+</tr>
+
+<tr>
+<TD><SELECT>
+<OPTION ID="DESSERT" VALUE="OPT1">DESSERT</OPTION>
+<OPTGROUP label="DESSERT">
+<OPTION VALUE="OPT2">RASGULLA</OPTION>
+<option value="opt3">RASMALAI</OPTION>
+<option value="opt4">GULAB-JAMUN</OPTION>
+<option value="opt5">RABBDI</OPTION>
+</optgroup>
+<td>300</td>
+
+<td><input type="text" id="txt3"></input></td>
+
+</tr>
+
+<tr>
+<td><SELECT>
+<OPTION id="SALAD" VALUE="OPT1">SALAD</OPTION>
+<OPTGROUP LABEL="SALAD">
+<OPTION VALUE="OPT2">ONION-LEMON</OPTION>
+<option value="opt3">CUCUMBER-ONION</OPTION>
+<option value="opt4">LEMON-PIKELS</OPTION>
+
+</optgroup>
+<td>120</td>
+
+<td><input type="text" id="txt4"></input></td>
+
+</tr>
+
+<button class="button button1"  onclick="total();">TOTAL</button>
+<div class="img1"></div>
+
+</table>
+<script>
+function total(){
+function food1(){
+var x=150;
+var y=document.getElementById('txt1').value;
+return(x*y);
+}
+function food2(){
+var x=200;
+var y=document.getElementById('txt2').value;
+return(x*y);
+}
+function food3(){
+var x=300;
+var y=document.getElementById('txt3').value;
+return(x*y);
+}
+function food4(){
+var x=120;
+var y=document.getElementById('txt4').value;
+return(x*y);
+}
+var t1=food1();
+var t2=food2();
+var t3=food3();
+var t4=food4();
+alert(t1+t2+t3+t4);
+
+}
+</script>
+</body>
+</html>
